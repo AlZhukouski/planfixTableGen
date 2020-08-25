@@ -20,6 +20,8 @@
 	<script src="js/bootstrap.context-menu-2.1.min.js"></script>
 	<script src="js/clipboars-2.0.2.min.js"></script>
 
+	<script src="https://kit.fontawesome.com/a5d5b8e153.js" crossorigin="anonymous"></script>
+
 
 	<script type="text/javascript" src="js/combined.base.394.js" data-manual></script>
 </head>
@@ -119,23 +121,29 @@
 									<li role="presentation" class="divider"></li>
 
 									<li role="presentation">
-										<a role="menuitem" tabindex="-1" href="#" id="import_csv_item" data-toggle="modal" data-target="#import_dialog">Импорт CSV файл...</a></li>
+										<a role="menuitem" tabindex="-1" href="#" id="import_csv_item" data-toggle="modal"
+											 data-target="#import_dialog">Импорт CSV файл...</a></li>
 
 									<li role="presentation">
-										<a role="menuitem" tabindex="-1" href="#" id="import_pasted_item" data-toggle="modal" data-target="#import_pasted_dialog">Вставить таблицу...</a></li>
+										<a role="menuitem" tabindex="-1" href="#" id="import_pasted_item" data-toggle="modal"
+											 data-target="#import_pasted_dialog">Вставить таблицу...</a></li>
 
 
 									<li role="presentation" class="divider"></li>
 
 									<li role="presentation">
-										<a role="menuitem" tabindex="-1" href="#" id="save_table_item" data-toggle="modal" data-target="#save_table_dialog">Сохранить таблицу...</a></li>
+										<a role="menuitem" tabindex="-1" href="#" id="save_table_item" data-toggle="modal"
+											 data-target="#save_table_dialog">Сохранить таблицу...</a></li>
 
 									<li role="presentation">
-										<a role="menuitem" tabindex="-1" href="#" id="load_table_item" data-toggle="modal" data-target="#load_table_dialog">Загрузить таблицу...</a></li>
+										<a role="menuitem" tabindex="-1" href="#" id="load_table_item" data-toggle="modal"
+											 data-target="#load_table_dialog">Загрузить таблицу...</a></li>
 
 									<li role="presentation" class="divider"></li>
 									<li>
-										<a role="button" href="#" title="Creates an example table. Press CTRL+Z (or menu Edit / Undo) to go back to your table" id="show_example_btn">Создать пример таблицы </a>
+										<a role="button" href="#"
+											 title="Creates an example table. Press CTRL+Z (or menu Edit / Undo) to go back to your table"
+											 id="show_example_btn">Создать пример таблицы </a>
 									</li>
 
 
@@ -146,16 +154,19 @@
 									 data-toggle="dropdown" href="#">Редактировать <b class="caret"></b></a>
 								<ul class="dropdown-menu" role="menu" aria-labelledby="column-dropdown">
 
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="edit_undo"><i class="icon-fixed-width icon-rotate-left"></i>Отменить (Ctrl+Z)</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="edit_undo"><i
+										class="icon-fixed-width icon-rotate-left"></i>Отменить (Ctrl+Z)</a></li>
 
 									<li role="presentation">
-										<a role="menuitem" tabindex="-1" href="#" id="edit_redo"><i class="icon-fixed-width icon-rotate-right"></i>Повторить (Ctrl+Y)</a>
+										<a role="menuitem" tabindex="-1" href="#" id="edit_redo"><i
+											class="icon-fixed-width icon-rotate-right"></i>Повторить (Ctrl+Y)</a>
 									</li>
 
 									<li role="presentation" class="divider"></li>
 
 									<li role="presentation">
-										<a role="menuitem" tabindex="-1" href="#" id="edit_autosave"><i class="icon-fixed-width icon-check-minus"></i> Автосохранение таблицы локально</a>
+										<a role="menuitem" tabindex="-1" href="#" id="edit_autosave"><i
+											class="icon-fixed-width icon-check-minus"></i> Автосохранение таблицы локально</a>
 									</li>
 								</ul>
 							</li>
@@ -166,7 +177,8 @@
 								<ul id="menu1" class="dropdown-menu" role="menu"
 										aria-labelledby="drop_table">
 									<li role="presentation" class="dropdown-submenu">
-										<a role="menuitem" tabindex="-1" href="#" id="table_resize"><i class="icon-fixed-width icon-resize-full"></i> Установить размер</a>
+										<a role="menuitem" tabindex="-1" href="#" id="table_resize"><i
+											class="icon-fixed-width icon-resize-full"></i> Установить размер</a>
 										<ul class="dropdown-menu">
 											<li>
 												<div class="table_size_chooser"></div>
@@ -229,7 +241,8 @@
 
 									<li role="presentation" class="divider"></li>
 
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="col_remove"><i class="icon-fixed-width icon-trash"></i> Удалить</a>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="col_remove"><i
+										class="icon-fixed-width icon-trash"></i> Удалить</a>
 									</li>
 								</ul>
 							</li>
@@ -238,14 +251,17 @@
 									class="caret"></b></a>
 								<ul id="menu2" class="dropdown-menu" role="menu" aria-labelledby="row-dropdown">
 									<li role="presentation">
-										<a role="menuitem" tabindex="-1" href="#" id="row_insert_above"><i class="icon-fixed-width icon-arrow-up"></i>Вставить выше</a>
+										<a role="menuitem" tabindex="-1" href="#" id="row_insert_above"><i
+											class="icon-fixed-width icon-arrow-up"></i>Вставить выше</a>
 									</li>
 									<li role="presentation">
-										<a role="menuitem" tabindex="-1" href="#" id="row_insert_below"><i class="icon-fixed-width icon-arrow-down"></i>Вставить ниже</a>
+										<a role="menuitem" tabindex="-1" href="#" id="row_insert_below"><i
+											class="icon-fixed-width icon-arrow-down"></i>Вставить ниже</a>
 									</li>
 									<li role="presentation" class="divider"></li>
 									<li role="presentation">
-										<a role="menuitem" tabindex="-1" href="#" id="row_remove"><i class="icon-fixed-width icon-trash"></i> Удалить</a>
+										<a role="menuitem" tabindex="-1" href="#" id="row_remove"><i
+											class="icon-fixed-width icon-trash"></i> Удалить</a>
 									</li>
 								</ul>
 							</li>
@@ -277,9 +293,11 @@
 							</li>
 
 							<li class="dropdown"><!-- Help menu -->
-								<a class="dropdown-toggle" id="file_item" role="button" data-toggle="dropdown" href="#">Помощь <b class="caret"></b></a>
+								<a class="dropdown-toggle" id="file_item" role="button" data-toggle="dropdown" href="#">Помощь <b
+									class="caret"></b></a>
 								<ul class="dropdown-menu" role="menu" aria-labelledby="file_item">
-									<li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="show_help_item" data-toggle="modal" data-target="#quick_help_dialog">Quick help</a></li>
+									<li role="presentation"><a role="menuitem" tabindex="-1" href="#" id="show_help_item"
+																						 data-toggle="modal" data-target="#quick_help_dialog">Quick help</a></li>
 
 									<li role="presentation">
 										<a role="menuitem" tabindex="-1" title="Documentation of the Tables Generator" href="/help/">Документация</a>
@@ -539,7 +557,8 @@
 				<h2>Выберите тему таблицы</h2>
 
 				<p>
-					Пожалуйста, составьте тему для своей таблицы, выбрав <strong>цвет, границы</strong> и <strong>полосы</strong>, показанные ниже.
+					Пожалуйста, составьте тему для своей таблицы, выбрав <strong>цвет, границы</strong> и <strong>полосы</strong>,
+					показанные ниже.
 				</p>
 
 				<div class="tabs">
@@ -912,11 +931,15 @@
 
 <div id="table-cell-menu" class="context-menu-wrap">
 	<ul class="context-menu" role="menu">
+		<li data-menu-item-id="add_Planfix_formula">
+			<a tab-index="-1"><span class="icon-paste">&nbsp;</span>Добавить формулу Планфикса</span></a>
+		</li>
+		<li class="divider"></li>
 
 		<li data-menu-item-id="cell_contents_cut"
 				class="with-zero-clipboard context-menu-item"
 				data-action-id="cell_contents_cut">
-			<a tab-index="-1"><span class="icon-cut">&nbsp;</span>Cut <span
+			<a tab-index="-1"><span class="icon-cut">&nbsp;</span>Вырезать <span
 				class="context-menu-item__keys">(Ctrl+X)</span></a>
 		</li>
 
@@ -1107,22 +1130,5 @@
 
 </script>
 
-<script type="text/javascript">
-
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-40666600-1']);
-	_gaq.push(['_setDomainName', 'tablesgenerator.com']);
-	_gaq.push(['_trackPageview']);
-
-	(function () {
-		var ga = document.createElement('script');
-		ga.type = 'text/javascript';
-		ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0];
-		s.parentNode.insertBefore(ga, s);
-	})();
-
-</script>
 </body>
 </html>

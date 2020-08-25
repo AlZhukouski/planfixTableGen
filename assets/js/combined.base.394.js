@@ -10959,6 +10959,20 @@ var MainUI = function (a, m) {
 			}), c.preventDefault())
 		}
 	};
+
+	e.prototype.addPF = function (a) {
+		let b = this.table_view;
+		return function (c) {
+			1 == c.which && (b.forEachSelectedCellView(function (b) {
+				console.log(b)
+				console.log(b.entry.context.innerHTML)
+				let xxx = "⊃" + b.entry.context.innerText + "⊄";
+				b.entry.context.innerText=xxx.replace(/(⊃)+/g,"⊃").replace(/(⊄)+/g,"⊄");
+				b.entry.addClass("entry-editing").attr("contenteditable", !0).focus();
+			}), c.preventDefault())
+		}
+	};
+
 	e.prototype.setVerticalAlignment = function (a) {
 		var b = this.table_view;
 		return function (c) {
@@ -11281,7 +11295,7 @@ var MainUI = function (a, m) {
 			c = a(c.target);
 			var e = c.closest("[data-action-id]");
 			if ((e = a(e).data("action-id")) || c.hasClass("copy-to-clipboard-workaround") || c.hasClass("with-zero-clipboard")) "cell_contents_cut" == e ? (c = d.table_view.getSelectedCellsAsHTML(), d.table_view.clearSelectedCellsContents(), b.setText(c, "text/html")) :
-				"cell_contents_copy" == e ? (c = d.table_view.getSelectedCellsAsHTML(), b.setText(c, "text/html")) : (c = a("#result-code").text(), -1 != navigator.appVersion.indexOf("Win") && (c = c.replace(/\n/g, "\r\n")), b.setText(c)), c && (d.table_view.ignore_next_copy_event = !0)
+				"cell_contents_copy" == e ? (c = d.table_view.getSelectedCellsAsHTML(), b.setText(c, "text/html")) : (c = a("#result-code").text(), -1 != navigator.appVersion.indexOf("Win") && (c = c.replace(/\n/g, "\r\n").replace(/\r?\n/g, "").replace(/"/g, '"+СИМВОЛ(39)+"').replace(/⊃/g, '"+').replace(/⊄/g, '+"')), b.setText(c)), c && (d.table_view.ignore_next_copy_event = !0)
 		})
 	};
 	e.prototype.initUndoRedo = function () {
@@ -11382,6 +11396,10 @@ var MainUI = function (a, m) {
 		}), c();
 		f.on("row_inserted", c);
 		f.on("column_inserted", b);
+
+		a('*[data-menu-item-id="add_Planfix_formula"]').click(this.addPF(this));
+
+
 		a('*[data-menu-item-id="cell_align_left"]').click(this.setHorizontalAlignment("left"));
 		a('*[data-menu-item-id="cell_align_center"]').click(this.setHorizontalAlignment("center"));
 		a('*[data-menu-item-id="cell_align_right"]').click(this.setHorizontalAlignment("right"));
